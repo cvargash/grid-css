@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    width: 100vh;
+    height: 100vw;
+}
+
+.main-container{
+    background-color: darkcyan;
+    width: 1000px;
+    height: 1000px;
+    display: grid;
+    grid-template-columns: 100px 400px 100px 300px 100px;
+    grid-template-rows: 100px 800px 100px;
+    grid-template-areas:
+    "left-street leftspace center-street up-street right-street"
+    "left-street leftspace center-street rightspace right-street"
+    "left-street down-street center-street rightspace right-street";
+}
+
+.main-container > div{
+    display: flex;
+}
+
+.image-container{
+    display: flex;
+    position: relative;
+}
+
+.image-container:hover .tank-image{
+    display: block;
+}
+
+.tank-image{
+    display: none;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.vertical {
+    flex-direction: column;
+}
+
+.left-street{
+    grid-area: left-street;
+}
+
+.leftspace{
+    grid-area: leftspace;
+}
+
+.center-street{
+    grid-area: center-street;
+}
+
+.up-street{
+    grid-area: up-street;
+}
+
+.right-street{
+    grid-area: right-street;
+}
+
+.rightspace{
+    grid-area: rightspace;
+}
+
+
+
+
+
+
